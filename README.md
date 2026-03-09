@@ -234,7 +234,7 @@ docker compose up --build
 ```
 
 ## Database unique IDs
-Generating and using unique IDs is a really important desicion when starting a new project and its most common use is as primary keys for database tables. This project uses a custom [UUID7 Draft04 implementation](https://github.com/oittaa/uuid6-python) to make it simple to use and take advantage of UUID type of PostgreSQL. UUID7 combines timestamp with random data in order to help to convert data into time-stamped sequencially. If you are looking for another alternatives for tables IDs like [Snowflakes](https://betterprogramming.pub/uuid-generation-snowflake-identifiers-unique-2aed8b1771bc), [ULID](https://github.com/ulid/spec), [KSUID](https://github.com/segmentio/ksuid), [pushID](https://firebase.blog/posts/2015/02/the-2120-ways-to-ensure-unique_68#how-push-ids-are-generated), [xid](https://github.com/rs/xid) among others you can check [these references](https://github.com/jonra1993/fastapi-alembic-sqlmodel-async/issues/12#issuecomment-1272425109).
+Generating and using unique IDs is a really important desicion when starting a new project and its most common use is as primary keys for database tables. This project uses a custom [UUID7 Draft04 implementation](https://github.com/oittaa/uuid6-python) to make it simple to use and take advantage of UUID type of PostgreSQL. UUID7 combines timestamp with random data in order to help to convert data into time-stamped sequencially. If you are looking for another alternatives for tables IDs like [Snowflakes](https://betterprogramming.pub/uuid-generation-snowflake-identifiers-unique-2aed8b1771bc), [ULID](https://github.com/ulid/spec), [KSUID](https://github.com/segmentio/ksuid), [pushID](https://firebase.blog/posts/2015/02/the-2120-ways-to-ensure-unique_68#how-push-ids-are-generated), [xid](https://github.com/rs/xid) among others you can check [these references](https://github.com/vargasjona/fastapi-alembic-sqlmodel-async/issues/12#issuecomment-1272425109).
 
 
 ## Code Style
@@ -421,7 +421,7 @@ To begin experimenting with the basic chatbot, follow these steps:
 - [x] Function return type annotations to declare the response_model (fastapi > 0.89.0)
 - [x] Add export report api in csv/xlsx files using StreamingResponse
 - [x] Add Github actions automation for deploy on Elastic Beanstalk - AWS
-- [x] Database query optimization. Many-Many use "selectin" and One-One and One-Many use "joined" [issue](https://github.com/jonra1993/fastapi-alembic-sqlmodel-async/issues/20)
+- [x] Database query optimization. Many-Many use "selectin" and One-One and One-Many use "joined" [issue](https://github.com/vargasjona/fastapi-alembic-sqlmodel-async/issues/20)
 - [x] Add Enum sample column
 - [x] Add docstrings
 - [x] Install pg_trgm by code and add a query for smart search of users by name
